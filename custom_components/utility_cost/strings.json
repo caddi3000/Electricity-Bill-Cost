@@ -1,0 +1,14 @@
+{
+  "title": "Utility Cost",
+  "config": {
+    "abort": {"single_instance_allowed": "Utility Cost is already configured."},
+    "step": {
+      "user": {"title": "Energy entities", "description": "Select the power sensors used for bill accounting and the devices you want tracked individually.", "data": {"grid_import_power":"Grid import power", "grid_export_power":"Grid export power", "house_power":"House power", "solar_power":"Solar production power", "tracked_power_entities":"Tracked device power sensors"}},
+      "tariffs": {"title":"Electricity plan", "description":"Rates are AUD per kWh and supply is AUD per day. Changing these later affects new consumption only; accumulated cost is retained.", "data":{"plan_name":"Plan name","peak_rate":"Peak rate","shoulder_rate":"Shoulder rate","offpeak_rate":"Off-peak rate","supply_daily":"Daily supply charge","fit_tier1":"FIT tier 1","fit_tier2":"FIT tier 2","fit_daily_limit":"FIT tier 1 daily limit (kWh)","bill_cycle_start":"Current bill-cycle start"}}
+    }
+  },
+  "options": {"step": {
+    "init": {"title":"Energy entities", "data": {"grid_import_power":"Grid import power", "grid_export_power":"Grid export power", "house_power":"House power", "solar_power":"Solar production power", "tracked_power_entities":"Tracked device power sensors"}},
+    "tariffs": {"title":"Electricity plan", "description":"New rates apply from the moment you save them; existing accumulated costs are not recalculated.", "data":{"plan_name":"Plan name","peak_rate":"Peak rate","shoulder_rate":"Shoulder rate","offpeak_rate":"Off-peak rate","supply_daily":"Daily supply charge","fit_tier1":"FIT tier 1","fit_tier2":"FIT tier 2","fit_daily_limit":"FIT tier 1 daily limit (kWh)","bill_cycle_start":"Current bill-cycle start"}}
+  }}
+}

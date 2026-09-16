@@ -1,0 +1,17 @@
+{
+  "domain": "utility_cost",
+  "name": "Utility Cost",
+  "version": "1.1.0",
+  "config_flow": true,
+  "single_config_entry": true,
+  "documentation": "https://github.com/caddi3000/Utility-Costings",
+  "issue_tracker": "https://github.com/caddi3000/Utility-Costings/issues",
+  "codeowners": [],
+  "dependencies": [
+    "http",
+    "lovelace"
+  ],
+  "iot_class": "local_push",
+  "integration_type": "helper",
+  "requirements": []
+}
